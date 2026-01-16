@@ -1,0 +1,32 @@
+{
+    "seed": null,
+    "dataset": "mnist",
+    "beta": 1,
+    "c_energy": "cross_entropy",
+    "dimensions": [784, 1000, 10],
+    "dynamics": {
+        "dt": 0.1,
+        "n_relax": 50,
+        "tau": 1,
+        "tol": 0
+    },
+
+    "_save_weights": "log/run1/weights1.pt",
+    "load_weights": "log/run1/weights_40pct.pt",
+
+    "train_subset": 0.1,
+    "batch_size": 100,
+    "epochs": 1,
+    "learning_rate": 0.001,
+    "nonlinearity": "tanh",
+    "optimizer": "adam",
+
+    "mode": "gen",
+    "gen_input_mode": "corrupt_mnist",
+    "gen_sample_index": 50,
+    "gen_corrupt_frac": 0.15,
+    "gen_corrupt_mode": "noise",
+    "gen_output_class": -1,
+    "gen_output_strength": 1
+
+}

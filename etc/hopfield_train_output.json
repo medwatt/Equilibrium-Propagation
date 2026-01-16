@@ -1,0 +1,28 @@
+{
+    "seed": null,
+    "dataset": "mnist",
+    "beta": 1,
+    "c_energy": "cross_entropy",
+    "dimensions": [784, 1000, 10],
+    "dynamics": {
+        "dt": 0.1,
+        "n_relax": 50,
+        "tau": 1,
+        "tol": 0
+    },
+
+    "_save_weights": "log/run1/weights1.pt",
+    "_load_weights": "log/run1/weights1.pt",
+
+    "train_subset": 0.1,
+    "batch_size": 100,
+    "epochs": 1,
+    "learning_rate": 0.001,
+    "nonlinearity": "tanh",
+    "optimizer": "adam",
+
+    "input_train": false,
+    "input_train_frac": 0.2,
+    "input_mse_weight": 10.0
+
+}
